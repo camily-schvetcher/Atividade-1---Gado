@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro Veterinário</title>
+
+    <link rel="shortcut icon" href="img/cachorro.png">
+
+    <!-- Compiled and minified CSS --> 
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   <script
+   			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+   			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+   			  crossorigin="anonymous"></script>
+
+   <!-- Compiled and minified JavaScript -->
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body class='container'>
+    
+    <nav style="background-color: #A4D3EE">
+      <div class="row">
+        <div class="col s12 l12 m12 ">
+          <ul>
+            <li class="nav"><a href="index.html" class="nav" class="nav">Início</a></li>
+            <li class="nav"><a href="veterinario.php" class="nav" class="nav">Cadastro</a></li>
+            <li class="nav"><a href="listaVeterinario.php" class="nav" class="nav">Listagem</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col s12 l12 m12">
+        <center><h1 class="manuscrito">Cadastro Veterinário</h1></center>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s12 l12 m12 ">
+        <center><img src="img/modelo.png" style="width: 100px;"></center>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l12 m12 ">
+
+        <form action="veterinario.php" method="POST" enctype='multipart/form-data'>
+          <fieldset>
+            <div class="row form-group">
+              <div class="col s12 l6 m6">
+                <label class="control-label" for="nome">Nome:</label>
+                <input type="text" name="nome" value="{nome}">
+              </div>
+              <div class="col s12 l6 m6">
+                <label class="control-label" for="crmv">CRMV:</label>
+                <input type="text" name="crmv" value="{crmv}">
+              </div>
+              <div class="col s12 l6 m6">
+                <label class="control-label" for="telefone">Telefone:</label>
+                <input type="text" name="telefone" value="{telefone}">
+              </div>
+              <div class="col s12 l6 m6">
+                <label for="info">Informações:</label>
+                <input type="text" name="info" value="{info}">
+              </div><center>
+            <div class="btn" style="background-color: #A4D3EE">
+            <input type="file" name="imagem">
+            </div></center>
+            </div>
+            <input type="hidden" name="id" value="{id}">
+            <!--<input type="submit" name="salvar" value="Salvar" style="background-color: #A4D3EE">-->
+            <center><button class="btn waves-effect waves-light" type="submit" name="action" value="Salvar" style="background-color: #A4D3EE">Salvar</button></center>
+        
+        </fieldset>   
+        </form>
+  
+  </body>
+</html>
